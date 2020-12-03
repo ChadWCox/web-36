@@ -15,7 +15,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.use('/api/*,', (_, res) => {
+app.use('/api,', (_, res) => {
     res.json({ message: `web 36 is AWESOME!!`})
 })
 
